@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dog extends Animal implements Printable{
+public class Dog extends Animal implements Printable {
     private String color;
 
     public String getColor() {
@@ -11,10 +11,11 @@ public class Dog extends Animal implements Printable{
         this.color = color;
     }
 
-    public Dog(String name, String color){
-        super.setName(name);
+    public Dog(String name, String color) {
+        super(name);
         this.color = color;
     }
+
     @Override
     public Animal print() {
         System.out.println("Кличка: " + getName() + " Цвет: " + getColor());

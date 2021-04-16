@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat extends Animal implements Printable{
+public class Cat extends Animal implements Printable {
     private String color;
     private int claws;
 
@@ -20,11 +20,12 @@ public class Cat extends Animal implements Printable{
         this.claws = claws;
     }
 
-    Cat(String name, String color, int claws) {
-        super.setName(name);
-        this.claws = claws;
+    public Cat(String name, String color, int claws) {
+        super(name);
         this.color = color;
+        this.claws = claws;
     }
+
 
     @Override
     public Animal print() {

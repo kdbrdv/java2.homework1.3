@@ -10,9 +10,8 @@ public class Bird extends Animal implements Printable {
     public void setWings(int wings) {
         this.wings = wings;
     }
-
-    public Bird(String name, int wings) {
-        super.setName(name);
+    public Bird(String name, int wings){
+        super(name);
         this.wings = wings;
     }
 
